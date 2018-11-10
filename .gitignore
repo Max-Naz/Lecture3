@@ -1,0 +1,4 @@
+# Configuration Files
+target/
+.idea/
+*.iml
