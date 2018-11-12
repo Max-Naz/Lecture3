@@ -1,5 +1,4 @@
-# Lecture3
-QATestLab. Lecture №3. Nazarenko Maxim.
+# QATestLab. Lecture №3. Nazarenko Maxim.
 В ходе выполнения домашнего задания, в IDE IntelliJ IDEA был создан Maven проект, который использует библиотеки Selenium и Junit для реализации скриптов.
 
 Проект содержит следующие классы: 
