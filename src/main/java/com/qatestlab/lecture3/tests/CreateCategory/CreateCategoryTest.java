@@ -13,15 +13,17 @@ public class CreateCategoryTest {
     }
 
     public static void createCategoryCheck() {
-        SignInPage signInPage = PageFactory.initElements(driver, SignInPage.class);
-        signInPage.open();
-        signInPage.signInToAdminPanel();
+        AdminLoginPage adminLoginPage = PageFactory.initElements(driver, AdminLoginPage.class);
+        adminLoginPage.open();
+        adminLoginPage.loginToAdminPanel();
 
-        AdminPanelPage adminPanelPage = PageFactory.initElements(driver, AdminPanelPage.class);
-        adminPanelPage.openCategoryManagementPage();
-        adminPanelPage.addNewCategory();
-        adminPanelPage.filterCategoriesByName();
-        adminPanelPage.FindNewCategory();
+        AdminDashboardPage adminDashboardPage = PageFactory.initElements(driver, AdminDashboardPage.class);
+        adminDashboardPage.openCategoryManagementPage();
+
+        AdminCategoriesPage adminCategoriesPage = PageFactory.initElements(driver, AdminCategoriesPage.class);
+        adminCategoriesPage.addNewCategory();
+        adminCategoriesPage.filterCategoriesByName();
+        adminCategoriesPage.FindNewCategory();
 
         driver.quit();
     }
